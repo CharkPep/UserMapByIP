@@ -5,7 +5,7 @@ import time
 #56973b4e2b66415b8bad6f7312fe4d40
 def get_city(ip_address):
     # Your API key, available from your account page
-    YOUR_GEOLOCATION_KEY = '56973b4e2b66415b8bad6f7312fe4d40'
+    YOUR_GEOLOCATION_KEY = ''
     response = requests.get('https://ipgeolocation.abstractapi.com/v1/?api_key=' + YOUR_GEOLOCATION_KEY + '&ip_address=' + ip_address + "&fields=longitude,latitude")
     result = json.loads(response.content)
     print(result)
